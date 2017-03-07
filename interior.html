@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>THE_SITE_NAME</title>
+	<title>THE_PAGE_TITLE | THE_SITE_NAME</title>
 	
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -23,16 +23,19 @@
 		</nav>
 	</header>
 
-	<main class="container">
-		<h1 class="visuallyhidden">THE_SITE_NAME Home</h1>
+	<div class="container">
+		<h1>THE_PAGE_TITLE</h1>
 		
-		<section>
-			One
-		</section>
-		<section>
-			Two
-		</section>
-	</main>
+		<div class="interior-grid">
+			<main class="interior-grid__wide-left">
+				<p>main</p>
+			</main>
+		
+			<aside class="interior-grid__narrow-right">
+				<p>sidebar</p>
+			</aside>
+		</div>
+	</div>
 	
 	<footer class="container">
 		<p>&copy; 2017 Jordan Lev</p>

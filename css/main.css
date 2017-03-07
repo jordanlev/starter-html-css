@@ -1,0 +1,40 @@
+.interior-grid:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+@media screen and (min-width: 700px) {
+	.interior-grid__wide-left {
+		float: left;
+		width: 70%
+	}
+	.interior-grid__narrow-right {
+		float: left;
+		margin-left: 2%;
+		width: 28%;
+	}
+}
+
+
+.header-logo {
+	display: block;
+	margin: 0 auto;
+	
+	/* hide the text */
+	overflow: hidden;
+	text-indent: 101%;
+	white-space: nowrap;
+	
+	/* show the logo as a background image */
+	width: 100px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-image: url('../images/the-company-logo.png');
+}
+@media screen and (min-width: 700px) {
+	.header-logo {
+		width: 200px;
+		height: 200px;
+		background-image: url('../images/the-company-logo-large.png');
+	}
+}
